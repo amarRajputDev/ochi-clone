@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./assets/fonts/FoundersGrotesk-Semibold.woff2') format('woff2'),
+         url('./assets/fonts/FoundersGrotesk-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NeueMontreal';
+    src: url('./assets/fonts/NeueMontreal-Regular.woff2') format('woff2'),
+         url('./assets/fonts/NeueMontreal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.grotesk{
+    font-family:'CustomFont';
+}
+
+.neue{
+    font-family:'NeueMontreal', sans-serif;;
+}
+
+.custom-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Aligns at the bottom */
+  left: 0; /* Starts from the left */
+  width: 0px; /* Full width */
+  height: 2px; /* Thickness of the border */
+  background-color: black; /* Border color */
+}
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
